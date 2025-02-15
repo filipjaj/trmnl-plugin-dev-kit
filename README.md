@@ -8,7 +8,27 @@ This development kit allows you to view your four layouts easily and to provide 
 
 ## Setup
 
-Setup instructions.
+I prefer to use [`rbenv`](https://github.com/rbenv/rbenv) for  managing Ruby versions, but you're welcome to use a locally installed version.
+Note that the version I've used is in the `.ruby-version` file and `rbenv` will use that file to determine which version to install:
+
+```shell
+rbenv install
+```
+
+Once you have a valid version of Ruby installed, you need to use Bundler to install the required gems:
+
+```shell
+bundle install
+```
+
+That's all the setup!
+To run the application, use the following command:
+
+```shell
+bundle exec ruby trmnl-plugin-dev-kit.rb
+```
+
+The web app will be running on [http://localhost:4567](http://localhost:4567).
 
 ## Usage
 

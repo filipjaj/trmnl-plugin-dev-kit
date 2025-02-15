@@ -1,0 +1,15 @@
+# This YAML file should define a root dictionary and can contain any keys that would be provided
+# to TRMNL's servers as data for the plugin. These keys will exist at the root level when applying
+# the values to the plugin's layout templates.
+---
+quote_text: I love inside jokes. I'd love to be a part of one someday.
+quote_author: Michael Scott
+example_array:
+  - foo
+  - bar
+example_boolean: true
+example_integer: 42
+example_dictionary:
+  key1: value1
+  key2: value2
+  key3: value3

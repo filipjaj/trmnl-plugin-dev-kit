@@ -1,0 +1,26 @@
+# These are generally set by TRMNL's servers for the user, their device and properties
+# of your plugin. You can modify them if you want, but you won't get to control these
+# values when your plugin is deployed to TRMNL. These appear under the key `trmnl` in
+# the template variables.
+---
+user:
+  name: Firstname Lastname
+  first_name: Firstname
+  last_name: Lastname
+  locale: en
+  time_zone: London
+  time_zone_iana: Europe/London
+  utc_offset: 0
+device:
+  friendly_id: F0B0FF
+  percent_charged: 100.0
+  wifi_strength: 100
+system:
+  timestamp_utc: 1701234567
+plugin_settings:
+  instance_name: Plugin Dev Kit
+  strategy: webhook
+  dark_mode: no
+  polling_headers: ""
+  polling_url: ""
+  custom_fields_values: {}

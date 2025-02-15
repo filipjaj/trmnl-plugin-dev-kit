@@ -1,0 +1,6 @@
+# These are variables the user chooses in settings for your plugin on the TRMNL website.
+# You can define which variables are available and what values are allowed in your plugin
+# settings. These are accessible in your template via
+# `{{ trmnl.plugin_settings.custom_fields_values }}`.
+---
+field_name: value

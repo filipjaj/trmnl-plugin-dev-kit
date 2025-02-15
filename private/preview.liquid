@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://usetrmnl.com/css/latest/plugins.css" />
+    <script src="https://cdn.shopify.com/s/files/1/0533/2089/files/plugins.js" defer></script>
+    <style>
+      .container {
+        margin: 0 auto;
+        width: 800px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px 0;
+      }
+
+      ul.nav {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul.nav li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      ul.nav li a {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      ul.nav li a.selected {
+        color: green;
+      }
+
+      ul.nav li svg {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body class="environment trmnl" style="background-color: #dddddd;">
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1>Preview</h1>
+        </div>
+        <div>
+          <ul class="nav">
+            <li>
+              <a {% if layout == "full" %}class="selected" {% endif %}href="/preview/full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Z"></path></svg>
+                Full
+              </a>
+            </li>
+
+            <li>
+              <a {% if layout == "half_horizontal" %}class="selected" {% endif %}href="/preview/half_horizontal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,16v64H56V56Zm0,144H56V136H200v64Z"></path></svg>
+                Half Horizontal
+              </a>
+            </li>
+
+            <li>
+              <a {% if layout == "half_vertical" %}class="selected" {% endif %}href="/preview/half_vertical">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40ZM56,56h64V200H56ZM200,200H136V56h64V200Z"></path></svg>
+                Half Vertical
+              </a>
+            </li>
+
+            <li>
+              <a {% if layout == "quadrant" %}class="selected" {% endif %}href="/preview/quadrant">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z"></path></svg>
+                Quadrant
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="view view--{{ layout }}">
+
+<!-- contents begin -->
+
+{{ contents }}
+
+<!-- contents end -->
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

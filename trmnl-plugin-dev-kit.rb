@@ -16,7 +16,6 @@ get '/preview/:layout' do
 
   template = make_template(valid_layout)
   locals = select_variables()
-  puts locals
   liquid template, locals: locals
 end
 

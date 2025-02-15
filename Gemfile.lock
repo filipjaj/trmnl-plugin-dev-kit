@@ -2,6 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.2.0)
+    bigdecimal (3.1.9)
+    liquid (5.7.2)
+      bigdecimal
+      strscan (>= 3.1.1)
     logger (1.6.6)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
@@ -26,6 +30,7 @@ GEM
       rack-protection (= 4.1.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
+    strscan (3.1.2)
     tilt (2.6.0)
 
 PLATFORMS
@@ -33,6 +38,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  liquid
   puma
   rackup
   sinatra

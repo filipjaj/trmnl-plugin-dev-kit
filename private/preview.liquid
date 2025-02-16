@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Preview {{ plugin }} plugin</title>
     <link rel="stylesheet" href="https://usetrmnl.com/css/latest/plugins.css" />
     <script src="https://cdn.shopify.com/s/files/1/0533/2089/files/plugins.js" defer></script>
     <style>
@@ -53,28 +54,28 @@
         <div>
           <ul class="nav">
             <li>
-              <a {% if layout == "full" %}class="selected" {% endif %}href="/preview/full">
+              <a {% if layout == "full" %}class="selected" {% endif %}href="/preview/full?plugin={{ plugin }},custom_fields={{ custom_fields }},user_data={{ user_data }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Z"></path></svg>
                 Full
               </a>
             </li>
 
             <li>
-              <a {% if layout == "half_horizontal" %}class="selected" {% endif %}href="/preview/half_horizontal">
+              <a {% if layout == "half_horizontal" %}class="selected" {% endif %}href="/preview/half_horizontal?plugin={{ plugin }},custom_fields={{ custom_fields }},user_data={{ user_data }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,16v64H56V56Zm0,144H56V136H200v64Z"></path></svg>
                 Half Horizontal
               </a>
             </li>
 
             <li>
-              <a {% if layout == "half_vertical" %}class="selected" {% endif %}href="/preview/half_vertical">
+              <a {% if layout == "half_vertical" %}class="selected" {% endif %}href="/preview/half_vertical?plugin={{ plugin }},custom_fields={{ custom_fields }},user_data={{ user_data }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40ZM56,56h64V200H56ZM200,200H136V56h64V200Z"></path></svg>
                 Half Vertical
               </a>
             </li>
 
             <li>
-              <a {% if layout == "quadrant" %}class="selected" {% endif %}href="/preview/quadrant">
+              <a {% if layout == "quadrant" %}class="selected" {% endif %}href="/preview/quadrant?plugin={{ plugin }},custom_fields={{ custom_fields }},user_data={{ user_data }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z"></path></svg>
                 Quadrant
               </a>

@@ -29,6 +29,7 @@ end
 def selected_plugin
   # Try various options in sequence. Param value, first available.
   candidates = [params[:plugin], available_plugins.first]
+  puts candidates
   candidates.find { |candidate| available_plugins.include?(candidate) }
 end
 
@@ -74,7 +75,10 @@ def template_variables(layout)
     'contents' => contents,
     'plugin' => selected_plugin,
     'custom_fields' => selected_custom_fields,
-    'user_data' => selected_user_data
+    'user_data' => selected_user_data,
+    'available_plugins' => available_plugins,
+    'available_custom_fields' => available_custom_fields,
+    'available_user_data' => available_user_data
   }
 end
 

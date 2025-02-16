@@ -64,6 +64,7 @@
 
       .data-selectors {
         margin: 20px 0;
+        text-align: right;
       }
     </style>
   </head>
@@ -120,19 +121,19 @@
       </div>
       <div class="data-selectors">
         <label for="plugin">Plugin:</label>
-        <select name="plugin" id="plugin">
+        <select name="plugin" id="plugin" onchange="reloadWithSelectedOptions()">
           {% for item in available_plugins %}
             <option value="{{ item }}" {% if item == plugin %}selected{% endif %}>{{ item }}</option>
           {% endfor %}
         </select>
         <label for="custom-fields">Custom Fields:</label>
-        <select name="custom-fields" id="custom-fields">
+        <select name="custom-fields" id="custom-fields" onchange="reloadWithSelectedOptions()">
           {% for item in available_custom_fields %}
             <option value="{{ item }}" {% if item == custom_fields %}selected{% endif %}>{{ item }}</option>
           {% endfor %}
         </select>
         <label for="user-data">User Data:</label>
-        <select name="user-data" id="user-data">
+        <select name="user-data" id="user-data" onchange="reloadWithSelectedOptions()">
           {% for item in available_user_data %}
             <option value="{{ item }}" {% if item == user_data %}selected{% endif %}>{{ item }}</option>
           {% endfor %}
@@ -140,4 +141,11 @@
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+    function reloadWithSelectedOptions() {
+      var url = '?plugin=' + document.getElementById('plugin').value + '&custom_fields=' + document.getElementById('custom-fields').value + '&user_data=' + document.getElementById('user-data').value;
+      window['window'].location.href = url;
+    }
+  </script>
 </html>

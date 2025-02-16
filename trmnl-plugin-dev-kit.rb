@@ -8,7 +8,8 @@ USER_DATA_PATH = File.join('variables', 'user_data')
 TRMNL_DATA_PATH = File.join('variables', 'trmnl_vars.yml')
 
 get '/' do
-  erb :index
+  # erb :index
+  redirect to '/preview'
 end
 
 get ['/preview', '/preview/'] do

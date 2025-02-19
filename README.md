@@ -8,8 +8,10 @@ This development kit allows you to view your four layouts easily and to provide 
 
 ## Setup
 
-I prefer to use [`rbenv`](https://github.com/rbenv/rbenv) for  managing Ruby versions, but you're welcome to use a locally installed version.
-Note that the version I've used is in the `.ruby-version` file and `rbenv` will use that file to determine which version to install:
+I prefer to use [`rbenv`](https://github.com/rbenv/rbenv) for managing Ruby versions, but you're welcome to use a locally installed version.
+If you do choose to install `rbenv`, you might get caught out if you don't immediately run `rbenv init`, follow its instructions and then restart your terminal.
+Note that the version of Ruby I've used is in the `.ruby-version` file and `rbenv` will use that file to determine which version to install.
+Ensure you run these commands from the root of this tool's checked out code:
 
 ```shell
 rbenv install

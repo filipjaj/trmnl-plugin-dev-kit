@@ -78,7 +78,8 @@ def template_variables(layout)
     'user_data' => selected_user_data,
     'available_plugins' => available_plugins,
     'available_custom_fields' => available_custom_fields,
-    'available_user_data' => available_user_data
+    'available_user_data' => available_user_data,
+    'plugin_variables' => plugin_variables.to_yaml(indentation: 3)[4..-1]
   }
 end
 
@@ -87,6 +88,6 @@ def plugin_variables
   custom_fields = YAML.load_file(File.join(CUSTOM_FIELDS_PATH, "#{selected_custom_fields}.yml"))
   user_data = YAML.load_file(File.join(USER_DATA_PATH, "#{selected_user_data}.yml"))
 
-  trmnl['custom_fields_values'] = custom_fields
-  {}.merge(user_data).merge({"trmnl": trmnl})
+  trmnl['plugin_settings']['custom_fields_values'] = custom_fields
+  {}.merge(user_data).merge({'trmnl' => trmnl})
 end

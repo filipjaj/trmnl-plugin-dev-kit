@@ -82,6 +82,24 @@
         font-size: 14px;
         font-weight: 600;
       }
+
+      #variables {
+        padding: 0 32px;
+      }
+
+      #variables h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      #variables code pre {
+        background-color: #eeeeee;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 16px;
+        height: 400px;
+        overflow-y: scroll;
+      }
     </style>
   </head>
   <body class="environment trmnl">
@@ -93,28 +111,28 @@
         <div>
           <ul class="nav">
             <li>
-              <a {% if layout == "full" %}class="selected" {% endif %}href="/preview/full?plugin={{ plugin }}&custom_fields={{ custom_fields }}&user_data={{ user_data }}">
+              <a {% if layout == "full" %}class="selected" {% endif %}href="/preview/full?plugin={{ plugin }}&user_data={{ user_data }}&custom_fields={{ custom_fields }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Z"></path></svg>
                 Full
               </a>
             </li>
 
             <li>
-              <a {% if layout == "half_horizontal" %}class="selected" {% endif %}href="/preview/half_horizontal?plugin={{ plugin }}&custom_fields={{ custom_fields }}&user_data={{ user_data }}">
+              <a {% if layout == "half_horizontal" %}class="selected" {% endif %}href="/preview/half_horizontal?plugin={{ plugin }}&user_data={{ user_data }}&custom_fields={{ custom_fields }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,16v64H56V56Zm0,144H56V136H200v64Z"></path></svg>
                 Half Horizontal
               </a>
             </li>
 
             <li>
-              <a {% if layout == "half_vertical" %}class="selected" {% endif %}href="/preview/half_vertical?plugin={{ plugin }}&custom_fields={{ custom_fields }}&user_data={{ user_data }}">
+              <a {% if layout == "half_vertical" %}class="selected" {% endif %}href="/preview/half_vertical?plugin={{ plugin }}&user_data={{ user_data }}&custom_fields={{ custom_fields }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40ZM56,56h64V200H56ZM200,200H136V56h64V200Z"></path></svg>
                 Half Vertical
               </a>
             </li>
 
             <li>
-              <a {% if layout == "quadrant" %}class="selected" {% endif %}href="/preview/quadrant?plugin={{ plugin }}&custom_fields={{ custom_fields }}&user_data={{ user_data }}">
+              <a {% if layout == "quadrant" %}class="selected" {% endif %}href="/preview/quadrant?plugin={{ plugin }}&user_data={{ user_data }}&custom_fields={{ custom_fields }}">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z"></path></svg>
                 Quadrant
               </a>
@@ -145,14 +163,6 @@
           </select>
         </div>
         <div>
-          <label for="custom-fields">Custom Fields:</label>
-          <select class="form-select" name="custom-fields" id="custom-fields" onchange="reloadWithSelectedOptions()">
-            {% for item in available_custom_fields %}
-              <option value="{{ item }}" {% if item == custom_fields %}selected{% endif %}>{{ item }}</option>
-            {% endfor %}
-          </select>
-        </div>
-        <div>
           <label for="user-data">User Data:</label>
           <select class="form-select" name="user-data" id="user-data" onchange="reloadWithSelectedOptions()">
             {% for item in available_user_data %}
@@ -160,13 +170,27 @@
             {% endfor %}
           </select>
         </div>
+        <div>
+          <label for="custom-fields">Custom Fields:</label>
+          <select class="form-select" name="custom-fields" id="custom-fields" onchange="reloadWithSelectedOptions()">
+            {% for item in available_custom_fields %}
+              <option value="{{ item }}" {% if item == custom_fields %}selected{% endif %}>{{ item }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div id="variables">
+        <h2>Variables</h2>
+        <code>
+          <pre>{{ plugin_variables }}</pre>
+        </code>
       </div>
     </div>
   </body>
 
   <script type="text/javascript">
     function reloadWithSelectedOptions() {
-      var url = '?plugin=' + document.getElementById('plugin').value + '&custom_fields=' + document.getElementById('custom-fields').value + '&user_data=' + document.getElementById('user-data').value;
+      var url = '?plugin=' + document.getElementById('plugin').value + '&user_data=' + document.getElementById('user-data').value + '&custom_fields=' + document.getElementById('custom-fields').value;
       window['window'].location.href = url;
     }
   </script>

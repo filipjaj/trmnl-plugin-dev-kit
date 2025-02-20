@@ -30,7 +30,6 @@ end
 def selected_plugin
   # Try various options in sequence. Param value, first available.
   candidates = [params[:plugin], available_plugins.first]
-  puts candidates
   candidates.find { |candidate| available_plugins.include?(candidate) }
 end
 

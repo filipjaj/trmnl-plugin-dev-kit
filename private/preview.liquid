@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;350;375;400;450;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://usetrmnl.com/css/latest/plugins.css" />
     <script src="https://cdn.shopify.com/s/files/1/0533/2089/files/plugins.js" defer></script>
     <style>
@@ -12,7 +14,7 @@
         background-color: #cccccc;
       }
 
-      .container {
+      .wrapper {
         margin: 0 auto;
         width: 865px;
       }
@@ -66,13 +68,24 @@
       }
 
       .data-selectors {
-        margin: 20px 0;
-        text-align: right;
+        margin: 16px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .data-selectors select {
+        width: 200px;
+      }
+
+      .data-selectors label {
+        font-size: 14px;
+        font-weight: 600;
       }
     </style>
   </head>
   <body class="environment trmnl">
-    <div class="container">
+    <div class="wrapper">
       <div class="header">
         <div>
           <h1>Preview</h1>
@@ -123,24 +136,30 @@
         </div>
       </div>
       <div class="data-selectors">
-        <label for="plugin">Plugin:</label>
-        <select name="plugin" id="plugin" onchange="reloadWithSelectedOptions()">
-          {% for item in available_plugins %}
-            <option value="{{ item }}" {% if item == plugin %}selected{% endif %}>{{ item }}</option>
-          {% endfor %}
-        </select>
-        <label for="custom-fields">Custom Fields:</label>
-        <select name="custom-fields" id="custom-fields" onchange="reloadWithSelectedOptions()">
-          {% for item in available_custom_fields %}
-            <option value="{{ item }}" {% if item == custom_fields %}selected{% endif %}>{{ item }}</option>
-          {% endfor %}
-        </select>
-        <label for="user-data">User Data:</label>
-        <select name="user-data" id="user-data" onchange="reloadWithSelectedOptions()">
-          {% for item in available_user_data %}
-            <option value="{{ item }}" {% if item == user_data %}selected{% endif %}>{{ item }}</option>
-          {% endfor %}
-        </select>
+        <div>
+          <label for="plugin">Plugin:</label>
+          <select class="form-select" name="plugin" id="plugin" onchange="reloadWithSelectedOptions()">
+            {% for item in available_plugins %}
+              <option value="{{ item }}" {% if item == plugin %}selected{% endif %}>{{ item }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="custom-fields">Custom Fields:</label>
+          <select class="form-select" name="custom-fields" id="custom-fields" onchange="reloadWithSelectedOptions()">
+            {% for item in available_custom_fields %}
+              <option value="{{ item }}" {% if item == custom_fields %}selected{% endif %}>{{ item }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="user-data">User Data:</label>
+          <select class="form-select" name="user-data" id="user-data" onchange="reloadWithSelectedOptions()">
+            {% for item in available_user_data %}
+              <option value="{{ item }}" {% if item == user_data %}selected{% endif %}>{{ item }}</option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
     </div>
   </body>

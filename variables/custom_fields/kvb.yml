@@ -3,5 +3,5 @@
 # settings. These are accessible in your template via
 # `{{ trmnl.plugin_settings.custom_fields_values }}`.
 ---
-latitude: 59.913868
-longitude: 10.752245
+latitude: 59.9042748
+longitude: 10.7880433

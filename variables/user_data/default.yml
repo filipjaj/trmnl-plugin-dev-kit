@@ -1,268 +1,261 @@
----
 data:
-  - id: 'YRY:Vehicle:ea315124-bbbe-3bb0-9f9c-b347322076f6'
-    lat: 59.904552
-    lon: 10.786895
+  - id: 'YRY:Vehicle:ea300803-636f-339c-aa00-2c9f5f13f967'
+    lat: 59.904602
+    lon: 10.787233
     system: Ryde_Oslo
+    isAvailable: true
     name: Ryde
     operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 23000
-    distance: 71.0599950458234
+    currentRangeMeters: 16400
+    distance: 37.1939471672054
+    walkingTime: 0.446327366006464
+    walkingTimeHumanReadable: Less than a minute-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: Buen
-  - id: 'YBO:Vehicle:549e7ef1-9245-4647-9da2-f52b09e599ad'
-    lat: 59.9055252075195
-    lon: 10.7867860794067
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 58800
-    distance: 155.710383718462
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YBO:Vehicle:b72caa74-696a-4cfd-8809-46358fac86c1'
-    lat: 59.9030418395996
-    lon: 10.7864723205566
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 4900
-    distance: 162.693902710519
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YBO:Vehicle:0148001b-08a3-4509-ad62-06c5b4789864'
-    lat: 59.902717590332
-    lon: 10.7900085449219
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 6300
-    distance: 204.915322953996
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YBO:Vehicle:ce7914a1-ebe9-4b93-a9c1-0ad2af9d1356'
-    lat: 59.9025268554688
-    lon: 10.7856149673462
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 53200
-    distance: 236.877250440879
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YBO:Vehicle:40c6c8f4-ab37-4f10-bd26-bbf129d24a00'
-    lat: 59.902473449707
-    lon: 10.7906332015991
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 35000
-    distance: 246.932023491154
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea306496-1bcb-3161-b806-fa0677f3ef80'
-    lat: 59.902225
-    lon: 10.790174
+  - id: 'YRY:Vehicle:ea321976-7ad2-3028-9bd8-d06d9f3a842e'
+    lat: 59.90489
+    lon: 10.787884
     system: Ryde_Oslo
+    isAvailable: true
     name: Ryde
     operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 42800
-    distance: 257.033420134388
+    currentRangeMeters: 3599
+    distance: 53.4545839291027
+    walkingTime: 0.641455007149232
+    walkingTimeHumanReadable: Less than a minute-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YBO:Vehicle:960995ed-b657-40c6-92fd-84dd1a608962'
-    lat: 59.9020957946777
-    lon: 10.7852973937988
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 32900
-    distance: 286.617921176751
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea312127-bacb-3b60-a73c-31dfafbc4a4d'
-    lat: 59.90673
-    lon: 10.791371
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 29600
-    distance: 330.086698104376
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea301732-6902-3cf8-a1dd-412e34cadb39'
-    lat: 59.901665
-    lon: 10.791185
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 42800
-    distance: 338.973420242677
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea309666-4666-33ab-87c8-91df6a620046'
-    lat: 59.90649
-    lon: 10.792384
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 45200
-    distance: 345.322502142191
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea315998-dd02-3db4-b1bd-3321d186da1b'
-    lat: 59.907352
-    lon: 10.789174
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 18800
-    distance: 347.928237330927
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea315833-a7e0-37a6-9307-e5e5ea767ff8'
-    lat: 59.901108
-    lon: 10.78725
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 19400
-    distance: 354.899647190462
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YBO:Vehicle:93229093-2371-44fc-b974-a7a7fc8147f9'
-    lat: 59.9030265808106
-    lon: 10.7939491271973
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 5600
-    distance: 357.359696280592
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea331315-9565-30b1-ae9b-38bfac994ae3'
-    lat: 59.901108
-    lon: 10.789412
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 40400
-    distance: 360.307856743725
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YVO:Vehicle:d50589ed-5b1d-4a1a-8504-35b18fd7c220'
-    lat: 59.901527
-    lon: 10.791556
+  - id: 'YVO:Vehicle:03d54dc9-2a4b-4fb8-8e93-7186010dbc4c'
+    lat: 59.90449
+    lon: 10.786726
     system: VOI
+    isAvailable: true
     name: VOI
     operator: 'YVO:Operator:voi'
-    currentRangeMeters: 12800
-    distance: 362.933449110959
+    currentRangeMeters: 59200
+    distance: 59.5157850102747
+    walkingTime: 0.714189420123296
+    walkingTimeHumanReadable: Less than a minute-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YVO:Vehicle:180947aa-d9f6-410a-840a-37b04d4779a0'
-    lat: 59.901512
-    lon: 10.791601
+  - id: 'YVO:Vehicle:6d835b76-2065-4983-ba29-82bc007f0c2f'
+    lat: 59.90462
+    lon: 10.786679
     system: VOI
+    isAvailable: true
     name: VOI
     operator: 'YVO:Operator:voi'
-    currentRangeMeters: 40000
-    distance: 365.693846349493
+    currentRangeMeters: 68000
+    distance: 65.7061157294976
+    walkingTime: 0.788473388753971
+    walkingTimeHumanReadable: Less than a minute-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea329718-be5b-3643-97f4-41bd75b8bed4'
-    lat: 59.906574
-    lon: 10.783231
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 43400
-    distance: 370.614789914675
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea164556-b77a-33f4-9f5f-41c9b0b2a394'
-    lat: 59.906593
-    lon: 10.783112
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 42200
-    distance: 376.888033854107
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YVO:Vehicle:7c1a7770-09e1-458a-855f-819aede1360b'
-    lat: 59.9077
-    lon: 10.787543
+  - id: 'YVO:Vehicle:41f82c1b-3f76-4728-9632-24864f54e596'
+    lat: 59.90416
+    lon: 10.788911
     system: VOI
+    isAvailable: true
     name: VOI
     operator: 'YVO:Operator:voi'
-    currentRangeMeters: 33600
-    distance: 381.884986096398
+    currentRangeMeters: 32000
+    distance: 68.9058792727357
+    walkingTime: 0.826870551272828
+    walkingTimeHumanReadable: Less than a minute-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea310600-35cf-3fc1-943d-b32c60db6512'
-    lat: 59.90086
-    lon: 10.786943
-    system: Ryde_Oslo
-    name: Ryde
-    operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 27200
-    distance: 384.633340962173
-    iconUrl: >-
-      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YVO:Vehicle:4c8ca97d-9922-4779-aa91-3106ce5e5d2f'
-    lat: 59.901917
-    lon: 10.782926
+  - id: 'YVO:Vehicle:b2454afc-3f8c-4dce-b91c-4fee630dd33e'
+    lat: 59.903748
+    lon: 10.787522
     system: VOI
+    isAvailable: true
     name: VOI
     operator: 'YVO:Operator:voi'
-    currentRangeMeters: 35200
-    distance: 387.499624538184
+    currentRangeMeters: 48000
+    distance: 75.2432416986822
+    walkingTime: 0.902918900384187
+    walkingTimeHumanReadable: Less than a minute-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YBO:Vehicle:16402ad9-0349-4451-9c73-b789082214cf'
-    lat: 59.9023132324219
-    lon: 10.7938737869263
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 57400
-    distance: 391.496640766431
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
-  - id: 'YRY:Vehicle:ea314014-48f2-3fbf-a77b-05a2aa466273'
-    lat: 59.900906
-    lon: 10.785885
+  - id: 'YVO:Vehicle:6930c221-92f8-42bf-a38f-bfb37942d326'
+    lat: 59.904922
+    lon: 10.789181
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 44000
+    distance: 96.4402514340528
+    walkingTime: 1.15728301720863
+    walkingTimeHumanReadable: 1 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:b891b19f-f5d3-45ea-89b7-aea2fda9ffbf'
+    lat: 59.90495
+    lon: 10.789203
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 32800
+    distance: 99.2794643075919
+    walkingTime: 1.1913535716911
+    walkingTimeHumanReadable: 1 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:97614e14-9003-40b6-9f0a-166d0cb0cf77'
+    lat: 59.90394
+    lon: 10.789386
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 43200
+    distance: 103.698912764004
+    walkingTime: 1.24438695316804
+    walkingTimeHumanReadable: 1 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:b93bae8a-87c5-44c2-9ced-b55b7cd8864f'
+    lat: 59.903927
+    lon: 10.789456
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 38400
+    distance: 107.799277552695
+    walkingTime: 1.29359133063234
+    walkingTimeHumanReadable: 1 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YRY:Vehicle:ea172079-f98a-39bf-8d6f-45ecc4f48d23'
+    lat: 59.90394
+    lon: 10.789541
     system: Ryde_Oslo
+    isAvailable: true
     name: Ryde
     operator: 'YRY:Operator:Ryde'
-    currentRangeMeters: 35000
-    distance: 393.451639539709
+    currentRangeMeters: 34400
+    distance: 111.238838383564
+    walkingTime: 1.33486606060277
+    walkingTimeHumanReadable: 1 minutes-ish
     iconUrl: >-
       https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
-    inPolygon: null
-  - id: 'YBO:Vehicle:12b17293-b0b2-4409-838c-1a48e6bbcce8'
-    lat: 59.9019622802734
-    lon: 10.7826890945435
-    system: Bolt Technology OÜ
-    name: Bolt
-    operator: 'YBO:Operator:bolt'
-    currentRangeMeters: 56700
-    distance: 394.023220114977
-    iconUrl: 'https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Bolt%20Logo.svg'
-    inPolygon: null
+  - id: 'YVO:Vehicle:6735ec0e-b0fc-487f-be71-57d3b8478718'
+    lat: 59.903866
+    lon: 10.789557
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 32000
+    distance: 116.10910735385
+    walkingTime: 1.3933092882462
+    walkingTimeHumanReadable: 1 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:64034439-790d-445f-a37b-4c9ab59d1096'
+    lat: 59.90408
+    lon: 10.79024
+    system: VOI
+    isAvailable: false
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 36800
+    distance: 141.938823132388
+    walkingTime: 1.70326587758866
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YRY:Vehicle:ea314117-9a0f-3298-8543-76f90d43f475'
+    lat: 59.90309
+    lon: 10.788
+    system: Ryde_Oslo
+    isAvailable: true
+    name: Ryde
+    operator: 'YRY:Operator:Ryde'
+    currentRangeMeters: 14000
+    distance: 147.501409515211
+    walkingTime: 1.77001691418253
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:325eff74-c62e-4c31-93dd-09f15d3c44c8'
+    lat: 59.9029
+    lon: 10.788355
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 57600
+    distance: 171.135633281404
+    walkingTime: 2.05362759937685
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:8649ab13-c54a-4e23-9b7f-5c1b14eb0976'
+    lat: 59.90315
+    lon: 10.785873
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 25600
+    distance: 176.131480470598
+    walkingTime: 2.11357776564718
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YRY:Vehicle:ea314559-c932-3213-9e82-432fdab4cdb9'
+    lat: 59.902718
+    lon: 10.787772
+    system: Ryde_Oslo
+    isAvailable: true
+    name: Ryde
+    operator: 'YRY:Operator:Ryde'
+    currentRangeMeters: 22400
+    distance: 188.365031028983
+    walkingTime: 2.2603803723478
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/Ryde%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:9a392d13-103f-4cf0-b0c5-5ad539f5f795'
+    lat: 59.905685
+    lon: 10.790093
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 25600
+    distance: 191.416229478035
+    walkingTime: 2.29699475373642
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:32f2164a-37f1-49cd-a057-7816456915cc'
+    lat: 59.902885
+    lon: 10.78952
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 37600
+    distance: 195.503746761886
+    walkingTime: 2.34604496114263
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg
+  - id: 'YVO:Vehicle:3af18219-381a-4bb7-a9fe-8fbf294a7fd9'
+    lat: 59.90273
+    lon: 10.789034
+    system: VOI
+    isAvailable: true
+    name: VOI
+    operator: 'YVO:Operator:voi'
+    currentRangeMeters: 72000
+    distance: 199.633974667044
+    walkingTime: 2.39560769600453
+    walkingTimeHumanReadable: 2 minutes-ish
+    iconUrl: >-
+      https://pub-8880548ea82e4e66913439824e2f4be4.r2.dev/VOI%20Technology%20Logo.svg

@@ -1,58 +1,74 @@
 <div class="layout">
+
   <div class="columns">
+   
     <div class="column">
-      <span class="label">VOI</span>
+      
       <table class="table">
-        <thead>
-          <tr>
-            <th><span class="label label--small">Provider</span></th>
-            <th><span class="label label--small">Distance</span></th>
-           
-          </tr>
-        </thead>
+      
+      
         <tbody>
-        {% assign voi = data | where: "operator", "YVO:Operator:voi" %}
-          {% for scoot in voi limit:3 %}
-         <tr>
-            <td><span class="label w--9 h--9 rounded--medium  "><img class="image image--contain rounded" src="{{scoot.iconUrl}}" width="100%" height="100%"></span></td>
-            <td><span class="label">{{scoot.distance | floor}} meter</span></td>
-
+        
+          {% assign sorted_scooters = data | sort: "walkingTime" %}
+          {% assign available_scooters = sorted_scooters | where: "isAvailable", true %}
+          {% for scooter in available_scooters limit:3 %}
+          <tr>
+            <td>
+              <div class="flex flex--row flex--center-y">
+                <span class="label w--6 h--6 rounded--medium">
+                  <img class="image image--contain rounded" src="{{scooter.iconUrl}}" width="100%" height="100%">
+                </span>
+              </div>
+            </td>
+            <td><span class="label">{{scooter.walkingTimeHumanReadable}}</span></td>
           </tr>
           {% endfor %}
-          
         </tbody>
       </table>
     </div>
     <div class="column">
-      <span class="label">Ryde</span>
-      <table class="table">
-        <thead>
-          <tr>
-            <th><span class="label label--small">Provider</span></th>
-            <th><span class="label label--small">Distance</span></th>
-           
-          </tr>
-        </thead>
+   
+   <table class="table">
         <tbody>
-         {% assign ryde = data | where: "operator", "YRY:Operator:Ryde"  %}
-          {% for scoot in ryde limit:3 %}
-         <tr>
-            <td><span class="label w--9 h--9 rounded--medium  "><img class="image image--contain rounded" src="{{scoot.iconUrl}}" width="100%" height="100%"></span></td>
-            <td><span class="label">{{scoot.distance | floor}} meter</span></td>
-
+          {% assign sorted_scooters = data | sort: "walkingTime" %}
+          {% assign available_scooters = sorted_scooters | where: "isAvailable", true %}
+          {% for scooter in available_scooters limit:3 offset:3 %}
+          <tr>
+            <td>
+              <div class="flex flex--row flex--center-y">
+                <span class="label w--6 h--6 rounded--medium">
+                  <img class="image image--contain rounded" src="{{scooter.iconUrl}}" width="100%" height="100%">
+                </span>
+              </div>
+            </td>
+            <td><span class="label">{{scooter.walkingTimeHumanReadable}}</span></td>
           </tr>
           {% endfor %}
-          
         </tbody>
       </table>
     </div>
-
-
   </div>
 </div>
 
 <div class="title_bar">
   <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg">
   <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
-  <span class="instance">Description</span>
+    <span class="instance">
+         <!-- Provider summary -->
+      <div class="flex flex--row flex--bottom">
+        {% assign all_operators = available_scooters | map: "name" | uniq %}
+        {% for operator in all_operators %}
+          {% assign operator_count = available_scooters | where: "name", operator | size %}
+          {% assign displayed_count = available_scooters | slice: 0, 5 | where: "name", operator | size %}
+          {% assign remaining = operator_count | minus: displayed_count %}
+          {% assign first_scooter = available_scooters | where: "name", operator | first %}
+          <div class="flex flex--row  flex--center-y" data-value-fit="true">
+          <span class="label w--8  ">
+            <img class="image image--contain" src="{{first_scooter.iconUrl}}" width="100%" height="100%">
+          </span>
+          <span class="label" >{{operator_count}}{% if remaining > 0 %} (+{{remaining}} more){% endif %}</span>
+          </div>
+        {% endfor %}
+      </div>
+  </span>
 </div>
